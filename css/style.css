@@ -1,0 +1,32 @@
+:root {
+    --color-body-0: #055EB2;
+    --color-body-10: #FC6B0F;
+    --color-body-20: #FF6500;
+    --color-text-0: #7F858D;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    border: 1px solid red;
+    width: 1440px;
+    height: 110px;
+    /*background-color: var(--color-body-0);*/
+    display: block;
+    
+}
+
+
+.container img {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
