@@ -12,14 +12,16 @@
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 header{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 1440px;
     height: 138px;
     background-color: var(--color-body-0);
     position: absolute;
+    width: 100%;
 
 }
 
@@ -36,32 +38,118 @@ header{
 
 }
 
+.carrossel {
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -280px;
+    margin-bottom: -150px;
+    margin-left: -600px; 
+
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.conteudo-slide {
+    width: 25%;
+    position: relative;
+}
+
+.conteudo-slide .legenda {
+    width: 250px;
+    height: 80px;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.conteudo-slide .valor {
+    width: 198px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-body-20);
+    font-weight: 700;
+}
+
+.conteudo-slide .type_payment {
+    width: 198px;
+    color: var(--color-text-0);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.conteudo-slide button {
+    width: 200px;
+    height: 45px;
+    background-color: var(--color-body-20);
+    border-radius: 4px;
+    border-color: var(--color-body-20);
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.conteudo-slide img {
+    width: 162px;
+    height: 162px;
+    margin-right: 20px;
+}
+
+
+/*.label-btn { 
+    /*border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+} */
+
+
 .border{
     width: 120px;
     height: 770px;
     background-color: var(--color-body-10);
-    
+    height: 100vh;
+   
 }
 
 .bordered-element {
-    border-right: 1px solid red; 
+    /*border-right: 1px solid red; */
     width: 120px;
     height: 770px;
     background-color: var(--color-body-10);
     display: flex;
     position: absolute;
     top: 138px;
-    left: 1320px;
-
+    right: 0;
+    height: 95vh;
 }
 
 footer {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 1440px;
     height: 110px;
     background-color: var(--color-body-0);
     display: block;
     position: absolute;
+    width: 100%;
+    margin: 0;
 }
 
 
