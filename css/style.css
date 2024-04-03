@@ -2,7 +2,8 @@
     --color-body-0: #055EB2;
     --color-body-10: #FC6B0F;
     --color-body-20: #FF6500;
-    --color-text-0: #7F858D;
+    --color-text-30: #7F858D;
+    --color-text-40: #F2F3F4;
 }
 
 
@@ -20,7 +21,7 @@ header{
     width: 1440px;
     height: 138px;
     background-color: var(--color-body-0);
-    position: absolute;
+    display: flex;
     width: 100%;
 
 }
@@ -38,62 +39,105 @@ header{
 
 }
 
+.container {
+    border: 1px solid red;
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--color-body-20);
+}
+
 .carrossel {
-    width: 1200px;
-    height: 700px;
+    max-width: 1200px;
+    height: 886px;
+    background-color: var(--color-text-40);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -280px;
+   margin-top: -263px;
     margin-bottom: -150px;
-    margin-left: -600px; 
+    margin-left: -600px; */
 
-}
+} 
 
 .slides {
     width: 400%;
-    height: 400px;
+    height: 500px;
     display: flex;
+    margin-left: 15px;
 }
 
 .slides input {
     display: none;
 }
 
-.conteudo-slide {
-    width: 25%;
+.card-1 {
+    width: 270px;
+    height: 436px;
     position: relative;
+    border-radius: 0.25rem;
+    background-color: white;
+    margin: 10px;
+}
+.card-2 {
+    width: 270px;
+    height: 436px;
+    position: relative;
+    border-radius: 0.25rem;
+    background-color: white;
+    margin: 10px;
+}
+.card-3 {
+    width: 270px;
+    height: 436px;
+    position: relative;
+    border-radius: 0.25rem;
+    background-color: white;
+    margin: 10px;
+}
+.card-4 {
+    width: 270px;
+    height: 436px;
+    position: relative;
+    border-radius: 0.25rem;
+    background-color: white;
+    margin: 10px;
 }
 
-.conteudo-slide .legenda {
+.card-1 .legenda {
     width: 250px;
     height: 80px;
     font-weight: 600;
     line-height: 18px;
     font-size: 16px;
+    margin-left: 10px;
 }
 
-.conteudo-slide .valor {
+.card-1 .valor {
     width: 198px;
     font-size: 20px;
     line-height: 30px;
     color: var(--color-body-20);
     font-weight: 700;
+    margin-left: 10px;
 }
 
-.conteudo-slide .type_payment {
+.card-1 .type_payment {
     width: 198px;
     color: var(--color-text-0);
     font-weight: 600;
     line-height: 30px;
     font-size: 12px;
+    margin-left: 10px;
 }
 
-.conteudo-slide button {
+.card-1 button {
     width: 200px;
     height: 45px;
     background-color: var(--color-body-20);
@@ -103,64 +147,188 @@ header{
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
 }
 
-.conteudo-slide img {
+.card-1 img {
     width: 162px;
     height: 162px;
-    margin-right: 20px;
+    margin: 10px;
 }
 
-
-/*.label-btn { 
-    /*border: 2px solid red;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-} */
-
-
-.border{
-    width: 120px;
-    height: 770px;
-    background-color: var(--color-body-10);
-    height: 100vh;
-   
+.card-2 .legenda {
+    width: 250px;
+    height: 80px;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
-.bordered-element {
-    /*border-right: 1px solid red; */
-    width: 120px;
-    height: 770px;
-    background-color: var(--color-body-10);
+.card-2 .valor {
+    width: 198px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-body-20);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.card-2 .type_payment {
+    width: 198px;
+    color: var(--color-text-0);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.card-2 button {
+    width: 200px;
+    height: 45px;
+    background-color: var(--color-body-20);
+    border-radius: 4px;
+    border-color: var(--color-body-20);
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
     display: flex;
-    position: absolute;
-    top: 138px;
-    right: 0;
-    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
 }
+
+.card-2 img {
+    width: 162px;
+    height: 162px;
+    margin: 10px;
+}
+
+.card-3 .legenda {
+    width: 250px;
+    height: 80px;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.card-3 .valor {
+    width: 198px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-body-20);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.card-3 .type_payment {
+    width: 198px;
+    color: var(--color-text-0);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.card-3 button {
+    width: 200px;
+    height: 45px;
+    background-color: var(--color-body-20);
+    border-radius: 4px;
+    border-color: var(--color-body-20);
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.card-3 img {
+    width: 162px;
+    height: 162px;
+    margin: 10px;
+}
+
+.card-4 .legenda {
+    width: 250px;
+    height: 80px;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.card-4 .valor {
+    width: 198px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-body-20);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.card-4 .type_payment {
+    width: 198px;
+    color: var(--color-text-0);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.card-4 button {
+    width: 200px;
+    height: 45px;
+    background-color: var(--color-body-20);
+    border-radius: 4px;
+    border-color: var(--color-body-20);
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.card-4 img {
+    width: 162px;
+    height: 162px;
+    margin: 10px;
+
+}
+
 
 footer {
     /*border: 1px solid red;*/
     width: 1440px;
     height: 110px;
     background-color: var(--color-body-0);
-    display: block;
-    position: absolute;
+    display: flex;
     width: 100%;
     margin: 0;
+    align-items: center;
+    justify-content: center;   
 }
 
 
-#container {
+#rodape {
     justify-content: center;
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-#container img{
+#rodape img{
     background-repeat: no-repeat;
     background-position: center center;
 }
