@@ -43,6 +43,7 @@ header{
 .container {
     border: 1px solid red;
     width: 100%;
+    display: flex;
     min-height: 90vh;
     background-color: var(--color-body-20);
 }
@@ -50,32 +51,59 @@ header{
 .carrossel {
     max-width: 1200px;
     height: 100vh;
-    background-color: var(--color-text-40);
-    overflow: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--color-text-40);
     margin: auto;
-
+    flex-wrap: wrap;
 } 
 
-.titulo img{
+
+.container_title {
+    width: 100%;
     display: flex;
-    position: relative;
-    top: 25px;
 }
 
-.titulo .frase{
-    display: flex;
-    margin-bottom: 15px;
-    padding-left: 25px;
+.container_title h2{
     color: var(--color-text-50);
+    flex-wrap: wrap;
+    margin: 20px;
+    align-items: center;
+    
 }
 
+.container_title .star img{
+    position: relative;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+
+.container_title  a{
+    display: flex;
+    float: right;
+    max-width: 100%;
+    color: var(--color-body-20);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.container_title .seta_title img{
+    display: flex;
+    width: 7px;
+    height: 12px;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    vertical-align: baseline;
+}
 
 .slides {
     max-width: 1200px;
-    max-height: 600px;
+    max-height: 500px;
     display: flex;
     margin-left: 15px;
 }
@@ -168,8 +196,9 @@ header{
 .card-1 img {
     max-width: 100%;
     max-height: 100%;
-    margin: 10px;
+    margin: 20px;
     flex-wrap: wrap;
+    top: 20px;
 }
 
 .card-2 .legenda {
@@ -270,6 +299,7 @@ header{
     max-height: 100%;
     margin: 10px;
     flex-wrap: wrap;
+
 }
 
 .card-4 .legenda {
