@@ -56,13 +56,6 @@ header{
 } 
 
 
-.container_title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-}
-
 .titulos {
     width: 100%;
     display: flex;
@@ -85,7 +78,7 @@ header{
     margin-right: 5px;
 }
 
-.container_title h2{
+.titulos h2{
     color: var(--color-text-50);
     flex-wrap: wrap;
     margin: 20px;
@@ -93,14 +86,14 @@ header{
     
 }
 
-.container_title .star img{
+.titulos .star img{
     position: relative;
     margin-bottom: 15px;
     flex-wrap: wrap;
 }
 
 
-.container_title  u{
+.titulos  u{
     display: flex;
     float: right;
     max-width: 100%;
@@ -111,7 +104,7 @@ header{
     flex-wrap: wrap;
 }
 
-.container_title .seta_title img{
+.titulos .seta_title img{
     display: flex;
     justify-content: right;
     align-items: right;
@@ -398,44 +391,283 @@ footer {
 
 /* Adicionando responsividade */
 
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and  (max-width: 1400px) {
     .slides {
         width: 100%;
+        height: 100%;
         margin-top: 0px;
         overflow-x: visible;
     }
+    
 }
 
 @media screen and (max-width: 500px) {
+
+    .titulos{
+        margin-top: 0px;
+        max-width: 338px;
+        max-height: 120px;
+    }
+
+    .titulos .title-left {
+       max-width: 215px;
+       max-height: 120px;
+       margin-left: auto;
+    }
+
+    .titulos h2 {
+        max-width: 170px;
+        max-height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+        margin: 10px 15px 10px 10px;
+    }
+
+    .title-right img {
+        max-width: 7px;
+        max-height: 12px;
+        margin-top: 5px;
+    }
+
     .slides {
         width: 100%;
+        height: 100%;
         margin-top: 0px;
         flex-wrap: wrap;
     }
     .card {
-        max-width: 50%;
-        margin-top: 0px; 
-        align-items: center;
-        justify-content: center;
-        float: center;
+        max-width: 350px;
+        max-height: 250px;
+        margin: 10px auto;
     }
     .card-2 {
-        max-width: 50%;
-        margin-top: 0px;
-        align-items: center;
-        justify-content: center;
+        max-width: 350px;
+        max-height: 250px;
+        margin: 10px auto;
     }
     .card-3 {
-        max-width: 50%;
-        margin-top: 0px;
-        align-items: center;
-        justify-content: center;
+        max-width: 350px;
+        max-height: 250px;
+        margin: 10px auto;
     }
     .card-4 {
-        max-width: 50%;
-        margin-top: 0px; 
-        align-items: center;  
-        justify-content: center;  
+        max-width: 350px;
+        max-height: 250px;
+        margin: 10px auto;
+    }
+
+
+    .card .legenda {
+        max-width: 200px;
+        max-height: 100px;
+        font-weight: 600;
+        line-height: 18px;
+        font-size: 16px;
+        float: right;
+        margin: 10px;
+        overflow: visible;
+    }
+    
+    .card .valor {
+        max-width: 195px;
+        max-height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--color-body-20);
+        font-weight: 700;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card .type_payment {
+        max-width: 220px;
+        color: var(--color-text-30);
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 12px;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card button {
+        min-width: 274px;
+        max-height: 45px;
+        background-color: var(--color-body-20);
+        border-radius: 4px;
+        border-color: var(--color-body-20);
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    
+    .card img {
+        max-width: 92px; 
+        max-height: 92px;
+        margin: 10px;
+    }
+    .card-2 .legenda {
+        max-width: 200px;
+        max-height: 100px;
+        font-weight: 600;
+        line-height: 18px;
+        font-size: 16px;
+        float: right;
+        margin: 10px;
+        overflow: visible;
+    }
+    
+    .card-2 .valor {
+        max-width: 195px;
+        max-height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--color-body-20);
+        font-weight: 700;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card-2 .type_payment {
+        max-width: 220px;
+        color: var(--color-text-30);
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 12px;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card-2 button {
+        min-width: 274px;
+        max-height: 50px;
+        background-color: var(--color-body-20);
+        border-radius: 4px;
+        border-color: var(--color-body-20);
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    
+    .card-2 img {
+        max-width: 92px; 
+        max-height: 92px;
+        margin: 10px;
+    }
+    .card-3 .legenda {
+        max-width: 200px;
+        max-height: 100px;
+        font-weight: 600;
+        line-height: 18px;
+        font-size: 16px;
+        float: right;
+        margin: 10px;
+        overflow: visible;
+    }
+    
+    .card-3 .valor {
+        max-width: 195px;
+        max-height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--color-body-20);
+        font-weight: 700;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card-3 .type_payment {
+        max-width: 220px;
+        color: var(--color-text-30);
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 12px;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card-3 button {
+        min-width: 274px;
+        max-height: 50px;
+        background-color: var(--color-body-20);
+        border-radius: 4px;
+        border-color: var(--color-body-20);
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    
+    .card-3 img {
+        max-width: 92px; 
+        max-height: 92px;
+        margin: 10px;
+    }
+    .card-4 .legenda {
+        max-width: 200px;
+        max-height: 100px;
+        font-weight: 600;
+        line-height: 18px;
+        font-size: 16px;
+        float: right;
+        margin: 10px;
+        overflow: visible;
+    }
+    
+    .card-4 .valor {
+        max-width: 195px;
+        max-height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--color-body-20);
+        font-weight: 700;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card-4 .type_payment {
+        max-width: 220px;
+        color: var(--color-text-30);
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 12px;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .card-4 button {
+        min-width: 274px;
+        max-height: 50px;
+        background-color: var(--color-body-20);
+        border-radius: 4px;
+        border-color: var(--color-body-20);
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    
+    .card-4 img {
+        max-width: 92px; 
+        max-height: 92px;
+        margin: 10px;
     }
 }
 
