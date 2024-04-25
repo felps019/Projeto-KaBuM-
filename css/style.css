@@ -194,7 +194,7 @@ footer {
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin: 0px auto;
 }
 
 #rodape img {
